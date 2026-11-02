@@ -51,8 +51,13 @@ function App() {
   }, [currentProjectIndex]);
 
   const handleResumeDownload = useCallback(() => {
-    window.open("/resume.pdf", "_blank");
-  }, []);
+  const link = document.createElement("a");
+  link.href = "/Jeevasri_Resume.pdf";
+  link.download = "Jeevasri_Resume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}, []);
 
   const handleExplore = useCallback(() => {
     handleNavigate("journey");

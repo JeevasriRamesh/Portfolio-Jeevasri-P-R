@@ -1,0 +1,90 @@
+# Query: Resume
+# ContextLines: 1
+
+26 results - 5 files
+
+portfolio\src\App.tsx:
+   52  
+   53:   const handleResumeDownload = useCallback(() => {
+  window.open("/Jeevasri_Resume.pdf", "_blank");
+}, []);
+
+   65          onSearchToggle={() => setIsSearchOpen(true)}
+   66:         onResumeDownload={handleResumeDownload}
+   67        />
+
+   75        <main>
+   76:         <Hero onExplore={handleExplore} onResumeDownload={handleResumeDownload} />
+   77          
+
+  102            location={portfolioData.location}
+  103:           onResumeDownload={handleResumeDownload}
+  104          />
+
+  108          email={portfolioData.email}
+  109:         onResumeDownload={handleResumeDownload}
+  110        />
+
+portfolio\src\components\Footer.tsx:
+   5    email: string;
+   6:   onResumeDownload: () => void;
+   7  }
+   8  
+   9: export const Footer = ({ email, onResumeDownload }: FooterProps) => {
+  10    return (
+
+  50                <motion.button
+  51:                 onClick={onResumeDownload}
+  52                  className="p-2 bg-[#101318] border border-gray-800 rounded-lg hover:border-[#6366F1] transition-colors"
+
+portfolio\src\components\Navigation.tsx:
+    7    onSearchToggle: () => void;
+    8:   onResumeDownload: () => void;
+    9  }
+   10  
+   11: export const Navigation = ({ onNavigate, onSearchToggle, onResumeDownload }: NavigationProps) => {
+   12    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+   65              <motion.button
+   66:               onClick={onResumeDownload}
+   67                className="hidden sm:flex items-center gap-2 px-4 py-2 bg-[#E50914] hover:bg-[#F40612] text-white text-sm rounded-lg transition-colors"
+
+   71                <Download size={16} />
+   72:               Resume
+   73              </motion.button>
+
+  107                <motion.button
+  108:                 onClick={onResumeDownload}
+  109                  className="flex items-center gap-2 px-4 py-2 bg-[#E50914] hover:bg-[#F40612] text-white rounded-lg"
+
+  111                  <Download size={16} />
+  112:                 Resume
+  113                </motion.button>
+
+portfolio\src\sections\Contact.tsx:
+    7    location: string;
+    8:   onResumeDownload: () => void;
+    9  }
+   10  
+   11: export const Contact = ({ email, phone, location, onResumeDownload }: ContactProps) => {
+   12    return (
+
+  106            <motion.button
+  107:             onClick={onResumeDownload}
+  108              className="p-4 bg-[#0B0D10] border border-gray-800 rounded-lg hover:border-[#6366F1] transition-colors"
+
+portfolio\src\sections\Hero.tsx:
+    6    onExplore: () => void;
+    7:   onResumeDownload: () => void;
+    8  }
+    9  
+   10: export const Hero = ({ onExplore, onResumeDownload }: HeroProps) => {
+   11    return (
+
+   96              <Button
+   97:               onClick={onResumeDownload}
+   98                variant="outline"
+
+  101              >
+  102:               Download Resume
+  103              </Button>

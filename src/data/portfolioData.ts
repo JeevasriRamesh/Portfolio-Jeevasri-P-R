@@ -1,3 +1,4 @@
+
 export interface Project {
   id: string;
   episodeNumber: string;
@@ -115,7 +116,7 @@ export const portfolioData = {
       description: "Velammal College of Engineering and Technology",
       details: [
         "B.Tech Information Technology",
-        "CGPA: 8.1/10",
+        "CGPA: 8.17/10",
       ],
     },
     {
@@ -140,6 +141,7 @@ export const portfolioData = {
         "LinkedIn Job Market Analysis Dashboard",
         "TNOpportune - Government Scheme Finder",
         "Skill Barter - Skill Exchange Platform",
+        "VELORA - Fashion Shopping App Prototype",
       ],
     },
     {
@@ -231,7 +233,7 @@ export const portfolioData = {
       detailedDescription: {
         problem: "Citizens face significant challenges in discovering government schemes and job opportunities they're eligible for due to fragmented information across multiple government websites and complex eligibility criteria",
         process: "Developed a centralized database of government schemes and job opportunities with structured eligibility criteria. Built intelligent filtering algorithms that match user profiles against scheme requirements. Created an intuitive web interface for easy data input and result display.",
-        outcome: "Launched a user-friendly platform that has helped hundreds of citizens discover relevant government opportunities. The system provides personalized recommendations based on comprehensive eligibility analysis.",
+        outcome: "Launched a user-friendly platform that has helped citizens discover relevant government opportunities. The system provides personalized recommendations based on comprehensive eligibility analysis.",
       },
       coverImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=450&fit=crop",
       links: {
@@ -258,13 +260,40 @@ export const portfolioData = {
       detailedDescription: {
         problem: "Traditional skill learning platforms are often expensive and inaccessible, creating barriers for individuals who want to learn new skills but lack financial resources",
         process: "Designed and developed a session-based learning system where users can offer skills they're proficient in and learn skills they want to acquire. Implemented progress tracking to monitor learning journeys. Built a matching algorithm to connect compatible learners and teachers.",
-        outcome: "Created an accessible skill learning platform that fosters community-driven knowledge exchange. The platform has facilitated numerous skill-sharing sessions and built a learning community.",
+        outcome: "Created an accessible skill learning platform that fosters community-driven knowledge exchange. The platform has facilitated skill-sharing sessions and built a learning community.",
       },
       coverImage: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=450&fit=crop",
       links: {
         github: "https://github.com/JeevasriRamesh/Skill-Barter-",
         demo: "https://skill-barter-hxhk.onrender.com/",
       },
+    },
+    {
+      id: "velora",
+      episodeNumber: "04",
+      title: "VELORA - Fashion Shopping App Prototype",
+      category: "UI/UX Design & Frontend Development",
+      description: "An elegant fashion shopping app prototype designed in Figma and developed as an interactive web experience.",
+      fullDescription: "VELORA is a mobile-first fashion shopping application prototype featuring an elegant shopping experience. Designed with Figma and developed into an interactive web prototype, it includes welcome, login, signup, home, product details, wishlist, shopping bag, profile, checkout, and order confirmation screens.",
+      technologies: [
+        "Figma",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "UI/UX Design",
+        "Prototyping",
+        "Frontend Development",
+      ],
+      detailedDescription: {
+        problem: "Creating a simple and visually engaging fashion shopping experience with clear navigation across the main shopping activities.",
+        process: "Designed an 11-screen mobile interface in Figma and developed an interactive web prototype with clickable navigation and shopping flows.",
+        outcome: "Created a connected fashion shopping prototype covering the user journey from welcome and account access to checkout and order confirmation.",
+      },
+      coverImage: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&h=450&fit=crop",
+      links: {
+  github: "https://github.com/JeevasriRamesh/VELORA-Interactive-Prototype",
+  demo: "https://velora-interactive-prototype.onrender.com/",
+},
     },
   ],
 
@@ -326,9 +355,22 @@ export const portfolioData = {
       "Data Visualization",
       "Dashboard Development",
     ],
-    tools: ["Microsoft Excel", "Microsoft Power BI", "Git", "GitHub"],
+    tools: [
+      "Microsoft Excel",
+      "Microsoft Power BI",
+      "Git",
+      "GitHub",
+      "Jira",
+      "Trello",
+      "Figma",
+    ],
     database: ["MongoDB"],
-    additional: ["SAP"],
+    additional: [
+      "SAP",
+      "Manual Testing",
+      "Automation Testing",
+      "UI & UX Designing",
+    ],
   },
 
   certifications: [
@@ -344,13 +386,18 @@ export const portfolioData = {
     },
     {
       id: "cert-3",
-      title: "Cybersecurity for Beginners",
-      issuer: "Microsoft",
+      title: "Introducing SAP ABAP Fundamentals",
+      issuer: "SAP",
     },
     {
       id: "cert-4",
-      title: "Introducing SAP ABAP Fundamentals",
-      issuer: "SAP",
+      title: "Automation Testing Basics",
+      issuer: "Simplilearn",
+    },
+    {
+      id: "cert-5",
+      title: "Software Testing with Generative AI",
+      issuer: "Simplilearn",
     },
   ],
 
