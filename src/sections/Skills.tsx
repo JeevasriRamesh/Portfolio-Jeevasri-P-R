@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Card } from "../components/Card";
-import { Code, Globe, BarChart3, Wrench, Database, Zap } from "lucide-react";
+import { Code, Globe, BarChart3, Wrench, Database, Zap, Brain } from "lucide-react";
 
 interface SkillsProps {
   skills: Record<string, string[]>;
@@ -8,12 +8,48 @@ interface SkillsProps {
 }
 
 const skillCategories = [
-  { key: "programming", icon: Code, label: "Programming", coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=450&fit=crop" },
-  { key: "web", icon: Globe, label: "Web Development", coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=450&fit=crop" },
-  { key: "dataAnalytics", icon: BarChart3, label: "Data Analytics", coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=450&fit=crop" },
-  { key: "tools", icon: Wrench, label: "Tools", coverImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=450&fit=crop" },
-  { key: "database", icon: Database, label: "Database", coverImage: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800&h=450&fit=crop" },
-  { key: "additional", icon: Zap, label: "Additional", coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=450&fit=crop" },
+  {
+    key: "programming",
+    icon: Code,
+    label: "Programming",
+    coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=450&fit=crop"
+  },
+  {
+    key: "web",
+    icon: Globe,
+    label: "Web Development",
+    coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=450&fit=crop"
+  },
+  {
+    key: "dataAnalytics",
+    icon: BarChart3,
+    label: "Data Analytics",
+    coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=450&fit=crop"
+  },
+  {
+    key: "tools",
+    icon: Wrench,
+    label: "Tools",
+    coverImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=450&fit=crop"
+  },
+  {
+    key: "database",
+    icon: Database,
+    label: "Database",
+    coverImage: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800&h=450&fit=crop"
+  },
+  {
+    key: "aiRag",
+    icon: Brain,
+    label: "AI & RAG",
+    coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=450&fit=crop"
+  },
+  {
+    key: "additional",
+    icon: Zap,
+    label: "Additional",
+    coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=450&fit=crop"
+  },
 ];
 
 export const Skills = ({ skills, searchQuery }: SkillsProps) => {
