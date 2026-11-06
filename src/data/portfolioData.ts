@@ -142,6 +142,7 @@ export const portfolioData = {
         "TNOpportune - Government Scheme Finder",
         "Skill Barter - Skill Exchange Platform",
         "VELORA - Fashion Shopping App Prototype",
+        "TestGen AI - RAG-Based AI Test Case Generator",
       ],
     },
     {
@@ -295,6 +296,35 @@ export const portfolioData = {
   demo: "https://velora-interactive-prototype.onrender.com/",
 },
     },
+    {
+  id: "testgen-ai",
+  episodeNumber: "05",
+  title: "TESTGEN AI - RAG-Based AI Test Case Generator",
+  category: "AI & RAG Development",
+  description: "A Python-based RAG application that generates software test cases from Software Requirement Specification (SRS) PDFs.",
+  fullDescription: "TestGen AI is a Retrieval-Augmented Generation (RAG) application designed to simplify software testing by automatically generating test cases from SRS documents. It processes PDF documents, extracts and chunks text, creates vector embeddings, retrieves relevant information using FAISS, and generates test cases using Groq API. The application also supports exporting generated test cases to Excel.",
+  technologies: [
+    "Python",
+    "RAG",
+    "LangChain",
+    "FAISS",
+    "Sentence Transformers",
+    "Groq API",
+    "Streamlit",
+    "PDF Processing",
+    "Excel Export",
+  ],
+  detailedDescription: {
+    problem: "Manually analyzing Software Requirement Specification documents and preparing test cases can be time-consuming and repetitive.",
+    process: "Implemented a RAG pipeline involving PDF text extraction, text chunking, embedding generation, FAISS vector storage, relevant context retrieval, and LLM-based test case generation.",
+    outcome: "Developed an interactive application that generates requirement-based software test cases from SRS PDFs and supports Excel export.",
+  },
+  coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=450&fit=crop",
+  links: {
+    github: "https://github.com/JeevasriRamesh/TestGen-AI",
+    demo: " https://testgen-aigit-tvwsscfa7b4debjmi7pur4.streamlit.app/",
+  },
+},
   ],
 
   achievements: [
@@ -346,32 +376,49 @@ export const portfolioData = {
   ],
 
   skills: {
-    programming: ["Java", "Python", "SQL"],
-    web: ["HTML", "CSS", "JavaScript"],
-    dataAnalytics: [
-      "Data Cleaning",
-      "Data Preprocessing",
-      "Data Analysis",
-      "Data Visualization",
-      "Dashboard Development",
-    ],
-    tools: [
-      "Microsoft Excel",
-      "Microsoft Power BI",
-      "Git",
-      "GitHub",
-      "Jira",
-      "Trello",
-      "Figma",
-    ],
-    database: ["MongoDB"],
-    additional: [
-      "SAP",
-      "Manual Testing",
-      "Automation Testing",
-      "UI & UX Designing",
-    ],
-  },
+  programming: ["Java", "Python", "SQL"],
+
+  web: ["HTML", "CSS", "JavaScript"],
+
+  dataAnalytics: [
+    "Data Cleaning",
+    "Data Preprocessing",
+    "Data Analysis",
+    "Data Visualization",
+    "Dashboard Development",
+  ],
+
+  tools: [
+    "Microsoft Excel",
+    "Microsoft Power BI",
+    "Git",
+    "GitHub",
+    "Jira",
+    "Trello",
+    "Figma",
+    "Streamlit",
+  ],
+
+  database: ["MongoDB", "FAISS"],
+
+  aiRag: [
+    "Basic RAG Implementation",
+    "LangChain",
+    "Sentence Transformers",
+    "Groq API",
+    "PDF Processing",
+    "Text Chunking",
+    "Vector Embeddings",
+    "Semantic Search",
+  ],
+
+  additional: [
+    "SAP",
+    "Manual Testing",
+    "Automation Testing",
+    "UI & UX Designing",
+  ],
+},
 
   certifications: [
     {
@@ -399,6 +446,11 @@ export const portfolioData = {
       title: "Software Testing with Generative AI",
       issuer: "Simplilearn",
     },
+    {
+      id: "cert-6",
+      title: "Career Essentials in Generative AI",
+      issuer: "Simplilearn",
+    }
   ],
 
   social: {

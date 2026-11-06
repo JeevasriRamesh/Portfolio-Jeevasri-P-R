@@ -52,8 +52,8 @@ function App() {
 
   const handleResumeDownload = useCallback(() => {
   const link = document.createElement("a");
-  link.href = "/Jeevasri_Resume.pdf";
-  link.download = "Jeevasri_Resume.pdf";
+  link.href = "/Jeevasri_Resume(1).pdf";
+  link.download = "Jeevasri_Resume(1).pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
